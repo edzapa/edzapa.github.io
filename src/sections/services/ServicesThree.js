@@ -218,7 +218,7 @@ class ServicesOne extends React.Component {
                                                 <img src={this.props.seo.childImageSharp.fluid.src} alt="Software Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Cyber Secuirity
+                                            Cyber Security
                                         </ServiceHeading>
                                         <ServiceSeparator/>
                                         <ServiceList>
