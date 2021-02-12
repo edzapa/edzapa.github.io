@@ -98,7 +98,7 @@ class ContactPersonal extends React.Component {
         `
 
         const InfoTitle = styled.h4`
-            font-size: 35px;
+            font-size: 30px;
             color: #fff;
             font-family: Teko;
             text-align: center;
