@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Abstract - Creative Agency Personal Portfolio Template',
+    title: 'edvina',
     description:
-      'Abstract is a beautiful template built using React and Gatsby for creative agency or personal projects',
+      'my portfolio',
   },
   pathPrefix: '/',
   plugins: [
