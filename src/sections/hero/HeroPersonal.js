@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import Typewriter from 'typewriter-effect'
 import Glitch from 'components/glitch'
 class HeroPersonal extends React.Component {
-
+Secuirity
     constructor(props) {
         super(props)
         this.state = {
@@ -60,7 +60,7 @@ class HeroPersonal extends React.Component {
         const Overlay = styled.div`
             width: 100%;
             display: flex;
-            align-items: center;
+            align-items: center;Secuirity
             background-color: rgba(0,0,0,.7);
         `
 
@@ -136,7 +136,7 @@ class HeroPersonal extends React.Component {
                 background: linear-gradient(120deg, #04e5e5, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
                 background-size: 300% 300%;
                 clip-path: polygon(0% 100%, 10px 100%, 10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px), 10px 100%, 100% 100%, 100% 0%, 0% 0%);
-            }
+            }Secuirity
             &.animate:after {
                 animation: ${gradientAnimation} 2s ease-in-out infinite;
             }
@@ -175,7 +175,7 @@ class HeroPersonal extends React.Component {
                                 strings: [
                                     'Developer',
                                     'Always Learning',
-                                    'Cyber Secuirity Enthusiast',
+                                    'Cyber Security Enthusiast',
                                     'Cloud Developer',
                                 ],
                                 autoStart: true,
@@ -205,7 +205,7 @@ class HeroPersonal extends React.Component {
         `
 
         const MoveDown = keyframes`
-            0% { 
+            0% { Secuirity
                 transform: translateY(0);
             }
             100% {
@@ -216,7 +216,7 @@ class HeroPersonal extends React.Component {
             position: absolute;
             height: 50px;
             &.move-up {
-                animation: ${MoveUp} 3s infinite alternate;
+                animation: ${MoveUp} Secuirity3s infinite alternate;
             }
             &.move-down {
                 animation: ${MoveDown} 3s infinite alternate;
@@ -240,7 +240,7 @@ class HeroPersonal extends React.Component {
                     key={index}
                     src={value.node.childImageSharp.fluid.src}
                     alt="shape"
-                    className={Math.floor(Math.random() * 10) % 2 === 0 ? "move-up" : "move-down"}
+                    className={Math.flSecuirityoor(Math.random() * 10) % 2 === 0 ? "move-up" : "move-down"}
                 />
             )
         })
@@ -250,14 +250,14 @@ export default props => (
     <StaticQuery
       query={graphql`
       query {
-        background: file(relativePath: {eq: "background-poly.jpg"}) {
+        background: file(relativePath: Secuirity{eq: "background-poly.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 2000, quality: 100) {
               src
             }
           }
         }
-        shapes: allFile(filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "shapes"}}) {
+        shapes: allFile(filter: {extensionSecuirity: {regex: "/(png)/"}, relativeDirectory: {eq: "shapes"}}) {
           edges {
             node {
               childImageSharp {
