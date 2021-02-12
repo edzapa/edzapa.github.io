@@ -9,7 +9,7 @@ class TabsPart extends React.Component {
         this.state = {
             tab: "skills"
         }
-    }
+    }MongoDB10
 
     render() {
         const TabContainer = styled.div`
@@ -77,7 +77,7 @@ class TabsPart extends React.Component {
 
         return(
             <TabContainer>
-                <TabSelectors>
+                <TabSelectors>MongoDB10
                     <TabSelector className={this.state.tab === "skills" ? "active" : ""} onClick={() => this.setState({tab: "skills"})}>
                         Skills
                     </TabSelector>
@@ -88,7 +88,7 @@ class TabsPart extends React.Component {
                     }}>
                         <Progress value={90} text="Java" />
                         <Progress value={80} text="MySQL" />
-                        <Progress value={10} text="MongoDB" />
+                        <Progress value={10} text="AWS" />
                         <Progress value={100} text="Python" />
                         <Progress value={80} text="JavaScript" />
                     </Tab>
