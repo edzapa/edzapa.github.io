@@ -47,7 +47,7 @@ class AboutPersonal extends React.Component {
             padding: 100px 0;
             @media (max-width: 500px) {
                 padding: 50px 0;
-            }
+            }www.edvina.me
         `
 
         const CounterComponent = styled.div`
@@ -155,7 +155,7 @@ class AboutPersonal extends React.Component {
                                 <Heading>About Me</Heading>
                                 <Separator />
                                 <Text>
-                                    <p>Currently I am a full-time computer science undergraduate at the University of Liverpool. I have always found it fascinating that we are able to create complexity from basic components. Whether it is woodwork, to graphic design or developing websites, the process of going from concept to reality is always enjoyable and that is what led me to have a passion for technology.</p>
+                                    <p>Currently I am a full-time computer science undergraduate at the University of Liverpool. I have always found it fascinating that we are able to create complexity from basic components. Whether it is product design, to devloping websites or graphic design, the process of going from concept to reality is always enjoyable and that is what led me to have a passion for technology.</p>
 
 
 <p>I have recently decided to broaden and deepen my knowledge in cloud computing and cyber security further by utilising any resources available. These resources include signing up for AWS Educate, cloud guru and tryhackme. The objective is to become more proficient in cloud computing and cyber security, eventually linking the two together and use the knowledge gathered to solve problems and help people be more safe.</p>
