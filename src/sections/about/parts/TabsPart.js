@@ -9,7 +9,7 @@ class TabsPart extends React.Component {
         this.state = {
             tab: "skills"
         }
-    }MongoDB10
+    }
 
     render() {
         const TabContainer = styled.div`
@@ -77,7 +77,7 @@ class TabsPart extends React.Component {
 
         return(
             <TabContainer>
-                <TabSelectors>MongoDB10
+                <TabSelectors>
                     <TabSelector className={this.state.tab === "skills" ? "active" : ""} onClick={() => this.setState({tab: "skills"})}>
                         Skills
                     </TabSelector>
