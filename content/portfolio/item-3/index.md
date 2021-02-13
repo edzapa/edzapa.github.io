@@ -1,7 +1,7 @@
 ---
 id: 3
 image: './image.jpg'
-title: "TBC"
-category: "TBC"
-link: "https://github.com"
+title: "Liquet Coin"
+category: "FINANCIAL COMPUTING"
+link: "https://github.com/edzapa/liquet"
 ---
