@@ -271,13 +271,13 @@ class ServicesOne extends React.Component {
                                             <ServiceSeparator/>
                                             <ServiceList>
                                                 <ServiceListElement>
-                                                    Lorem ipsum dolor sit amet
+                                                    Currently enrolled in computer based trading in financial markets course
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    In vitae ultricies lacus vitae
+                                                    Always watching the markets and cryptocurrency
                                                 </ServiceListElement>
                                                 <ServiceListElement>
-                                                    Pellentesque blandit libero
+                                                    In progress to develop cryptocurrency information program
                                                 </ServiceListElement>
                                             </ServiceList>
                                         </ServiceElement>
