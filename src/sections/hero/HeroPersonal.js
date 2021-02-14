@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect'
 import Glitch from 'components/glitch'
 class HeroPersonal extends React.Component {
     constructor(props) {
-        super(props)https://github.com/downloads/user/repository/filename
+        super(props)https://github.com/downloads/user/repomailsitory/filename
         this.state = {
             height: 0,
             width: 0
@@ -97,7 +97,7 @@ class HeroPersonal extends React.Component {
                 font-size: 20px;
                 line-height: 20px;
             }
-            span {
+            span {mail
                 font-family: Teko;
             }
         `
@@ -182,7 +182,7 @@ class HeroPersonal extends React.Component {
                                 }}
                             />
                         </Type>
-                        <Resume href="https://raw.githubusercontent.com/edzapa/edzapa.github.io/main/edvinacv.pdf" download>
+                        <Resume href="https://raw.githubusercontent.com/edzapa/edzapa.github.io/main/edvinacv.pdf">
                             Download CV
                         </Resume>
                     </HeadingBox>
