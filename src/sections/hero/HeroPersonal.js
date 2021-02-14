@@ -182,7 +182,7 @@ class HeroPersonal extends React.Component {
                                 }}
                             />
                         </Type>
-                        <Resume href="/edzapa/edzapa.github.io/raw/main/edvinacv.pdf" download>
+                        <Resume href="https://raw.githubusercontent.com/edzapa/edzapa.github.io/main/edvinacv.pdf" download>
                             Download CV
                         </Resume>
                     </HeadingBox>
