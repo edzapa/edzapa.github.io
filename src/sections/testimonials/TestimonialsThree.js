@@ -173,3 +173,7 @@ class ContactOneForm extends React.Component {
           </ContactForm>
         )
     }
+
+}
+
+export default ContactOneForm
