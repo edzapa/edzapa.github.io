@@ -1,17 +1,53 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+
+const axios = require('axios')
 class ContactThreeForm extends React.Component {
       constructor(props) {
         super(props)
         this.state = {
             name: "",
             email: "",
-            phone: "",
+            subject: "",
             message: "",
-            error: false
+            error: false,
+            response: ""
         }
     }
+
+    formSubmit() {
+      if (this.state.name === "" || this.state.email === "" || this.state.subject === "" || this.state.message === "") {
+          this.setState({error: true})
+      } else {
+          this.setState({error: false})
+          var bodyFormData = new FormData()
+          bodyFormData.append('full_name', this.state.name)
+          bodyFormData.append('email', this.state.email)
+          bodyFormData.append('subject', this.state.subject)
+          bodyFormData.append('message', this.state.message)
+          axios({
+            method: 'post',
+            url: 'https://formspree.io/f/xjvpdyaq', 
+            data: bodyFormData,
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded'}
+            })
+            .then((response) => {
+                if (response.data.ok) {
+                  this.setState({response: "Your message has been submitted!"})
+                } else {
+                  this.setState({response: "Your message could not be submitted"})
+                }
+                this.forceUpdate()
+            })
+            .catch(function (response) {
+                this.setState({response: "There was an error"})
+                this.forceUpdate()
+            });
+      }
+      this.forceUpdate()
+    }
+
     
     check(val) {
         if (this.state.error && val === "") {
@@ -121,8 +157,12 @@ class ContactThreeForm extends React.Component {
             }
         `
 
+        const Response = styled.p`
+            color: #fff;
+            margin-top: 10px;
+        `
         return(
-          <ContactForm>
+          <ContactForm >
               <Heading>
                 Get In Touch
               </Heading>
@@ -131,21 +171,20 @@ class ContactThreeForm extends React.Component {
                 <Input type="text" defaultValue={this.state.name}  className={`name ${this.check(this.state.name) ? "" : "error"}`} placeholder="Name" onChange={e => this.setState({name: e.target.value})} />
               </InputElement>
               <InputElement>
-                <Input type="text" defaultValue={this.state.email} className={`email ${this.check(this.state.email) ? "" : "error"}`} placeholder="Email" onChange={e => this.setState({email: e.target.value})} />
+                <Input type="text" name="_replyto" defaultValue={this.state.email} className={`email ${this.check(this.state.email) ? "" : "error"}`} placeholder="Email" onChange={e => this.setState({email: e.target.value})} />
               </InputElement>
               <InputElement>
-                <Input type="text" defaultValue={this.state.phone} className="phone" placeholder="Phone" onChange={e => this.setState({phone: e.target.value})} />
+                <Input type="text" defaultValue={this.state.subject} className={`name ${this.check(this.state.subject) ? "" : "error"}`} placeholder="Subject" onChange={e => this.setState({subject: e.target.value})} />
               </InputElement>
               <InputElement>
                 <Textarea placeholder="Message" defaultValue={this.state.message}  className={`message ${this.check(this.state.message) ? "" : "error"}`} onChange={e => this.setState({message: e.target.value})} />
               </InputElement>
-              <Submit onClick={() => this.formSubmit()}
-               action="https://formspree.io/f/xjvpdyaq"
-               method="Submit">
+              <Submit onClick={() => this.formSubmit()}>
                 <span>
                   Submit
                 </span>
               </Submit>
+              <Response>{this.state.response}</Response>
           </ContactForm>
         )
     }
