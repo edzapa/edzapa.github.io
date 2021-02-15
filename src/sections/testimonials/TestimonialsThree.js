@@ -36,7 +36,7 @@ class TestimonialsThree extends React.Component {
             <Section id="testimonials">
                 <TestimonialContainer>
                     <Container>
-                      <AnimatedHeading text="Recent testimonials" />
+                      <AnimatedHeading text="MY BLOG" />
                       <AnimationContainer animation="fadeIn">
                         <TestimonialsThreePart testimonials={this.props.testimonials} />
                       </AnimationContainer>
