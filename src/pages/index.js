@@ -7,6 +7,7 @@ import AboutPersonal from 'sections/about/AboutPersonal.js'
 import ServicesThree from 'sections/services/ServicesThree.js'
 import PortfolioThree from 'sections/portfolio/PortfolioThree.js'
 import ContactPersonal from 'sections/contact/ContactPersonal.js'
+import TestimonialsThree from 'sections/testimonials/TestimonialsThree.js'
 
 class Index extends React.Component {
 
@@ -22,12 +23,13 @@ class Index extends React.Component {
         </Helmet>
         <Layout
           isHome={true}
-          sections={['home', 'about', 'services', 'portfolio', 'contact']}
+          sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'contact']}
         >
           <HeroPersonal />
           <AboutPersonal />
           <ServicesThree />
           <PortfolioThree />
+          <TestimonialsThree />
           <ContactPersonal />
         </Layout>
       </div>
