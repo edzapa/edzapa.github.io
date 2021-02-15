@@ -149,7 +149,9 @@ class ContactThreeForm extends React.Component {
               <InputElement>
                 <Textarea placeholder="Message" defaultValue={this.state.message}  className={`message ${this.check(this.state.message) ? "" : "error"}`} onChange={e => this.setState({message: e.target.value})} />
               </InputElement>
-              <Submit onClick={() => this.formSubmit()}>
+              <Submit onClick={() => this.formSubmit()}
+               action="https://formspree.io/f/xjvpdyaq"
+               method="Submit">
                 <span>
                   Submit
                 </span>
