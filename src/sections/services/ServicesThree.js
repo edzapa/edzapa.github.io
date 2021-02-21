@@ -178,10 +178,10 @@ class ServicesOne extends React.Component {
                                                 Building databases with MySQL
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                Using data to provide valuabe insights
+                                                Contributing to open source projects 
                                             </ServiceListElement>
                                             <ServiceListElement>
-                                                Making progress towards an AWS certification
+                                                Making progress towards an AWS Solutions Architect certification
                                             </ServiceListElement>
                                         </ServiceList>
                                     </ServiceElement>
