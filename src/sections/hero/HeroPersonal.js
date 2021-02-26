@@ -175,7 +175,7 @@ class HeroPersonal extends React.Component {
                                     'Developer',
                                     'Always Learning',
                                     'Cyber Security Enthusiast',
-                                    'Cloud Developer',
+                                    'Cloud Engineer',
                                 ],
                                 autoStart: true,
                                 loop: true,
